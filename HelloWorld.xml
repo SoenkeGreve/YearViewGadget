@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="Soenke's Go to Photo Album" height="250" scaling="false" />
-  <Content type="html">
-  <![CDATA[
+    <ModulePrefs
+            height="26"
+            title="REWE Digital Year View Gadget"
+            description="A year view Gadget for the google calendar as used at REWE Digital"
+            author="Sönke Greve (based on Syngron's code: http://syngron.blogspot.de/2013/01/new-google-calendar-wall-like-column.html)"
+            author_email="soenke.greve@rewe-digital.com">
+        <Require feature="views"/>
+        <Require feature="google.calendar-0.5"/>
+        <Require feature="google.calendar-0.5.read"/>
+        <Require feature="dynamic-height"/>
+        <Locale messages="messages__en.xml"/>
+    </ModulePrefs>
+    <Content type="html">
+        <![CDATA[
     <div style="text-align:center"><a
       id="Riggs" title="My Photo Album" target="_blank"
       href="http://picasaweb.google.com/doc.examples/ShelfBoy">
@@ -10,5 +21,5 @@
       title="Click Here."></a>
     </div>
   ]]>
-  </Content>
+    </Content>
 </Module>
